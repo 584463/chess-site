@@ -13,13 +13,13 @@ const app = express(),
       server = http.Server(app),
       io = socket(server);
 
-server.listen(config.port);
+server.listen(4444);
 
 games = {};
 
 myIo(io);
 
-console.log(`Server listening on port ${config.port}`);
+console.log(`Server listening on port 4444`);
 
 const Handlebars = handlebars.create({
   extname: '.html', 
